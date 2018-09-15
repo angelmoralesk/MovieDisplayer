@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="154" id="Q1i-cO-dYZ" customClass="MovieTableViewCell" customModule="MovieDisplayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1i-cO-dYZ" id="x5o-Bk-pJk">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-Kw-j2d">
+                        <rect key="frame" x="106" y="7" width="264" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-6m-xz8">
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPT-pe-QaT">
+                                <rect key="frame" x="0.0" y="19.5" width="264" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvH-uE-w77">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
+                                        <state key="normal" title="A"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXY-bJ-lbF">
+                                        <rect key="frame" x="32" y="0.0" width="30" height="20"/>
+                                        <state key="normal" title="B"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.6705882353" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hvH-uE-w77" firstAttribute="leading" secondItem="IPT-pe-QaT" secondAttribute="leading" id="HFw-Do-1v1"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="999" constant="20" id="PqI-fD-oxe"/>
+                                    <constraint firstItem="sXY-bJ-lbF" firstAttribute="leading" secondItem="hvH-uE-w77" secondAttribute="trailing" constant="2" id="a2d-hL-3rn"/>
+                                    <constraint firstAttribute="bottom" secondItem="sXY-bJ-lbF" secondAttribute="bottom" id="cE5-Ix-kzg"/>
+                                    <constraint firstAttribute="bottom" secondItem="hvH-uE-w77" secondAttribute="bottom" id="nPU-Wg-KAQ"/>
+                                    <constraint firstItem="sXY-bJ-lbF" firstAttribute="top" secondItem="IPT-pe-QaT" secondAttribute="top" id="sTz-ZT-rqk"/>
+                                    <constraint firstItem="hvH-uE-w77" firstAttribute="top" secondItem="IPT-pe-QaT" secondAttribute="top" id="wXd-lE-obd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venom" translatesAutoresizingMaskIntoConstraints="NO" id="kHX-Lc-hnM">
+                        <rect key="frame" x="16" y="12" width="80" height="102.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="oSZ-iu-FxI"/>
+                            <constraint firstAttribute="width" secondItem="kHX-Lc-hnM" secondAttribute="height" multiplier="25:32" id="rnb-rC-hAg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kHX-Lc-hnM" secondAttribute="bottom" priority="751" constant="13.5" id="9Ae-iC-0ho"/>
+                    <constraint firstItem="tgO-Kw-j2d" firstAttribute="leading" secondItem="kHX-Lc-hnM" secondAttribute="trailing" constant="10" id="BPa-kC-BZd"/>
+                    <constraint firstAttribute="trailing" secondItem="tgO-Kw-j2d" secondAttribute="trailing" constant="5" id="Gru-DF-yWF"/>
+                    <constraint firstItem="kHX-Lc-hnM" firstAttribute="leading" secondItem="x5o-Bk-pJk" secondAttribute="leading" constant="16" id="RFP-fH-rjF"/>
+                    <constraint firstAttribute="bottom" secondItem="tgO-Kw-j2d" secondAttribute="bottom" priority="750" constant="7" id="RL5-0G-75i"/>
+                    <constraint firstItem="tgO-Kw-j2d" firstAttribute="top" secondItem="x5o-Bk-pJk" secondAttribute="top" constant="7" id="dje-gE-lV1"/>
+                    <constraint firstItem="kHX-Lc-hnM" firstAttribute="top" secondItem="x5o-Bk-pJk" secondAttribute="top" constant="12" id="yM4-gA-Vag"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="generalInfoStack" destination="tgO-Kw-j2d" id="NnC-XO-YHy"/>
+                <outlet property="movieTitleLabel" destination="Jac-6m-xz8" id="9YW-PH-TVJ"/>
+            </connections>
+            <point key="canvasLocation" x="-4.5" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="venom" width="720" height="1066"/>
+    </resources>
+</document>
