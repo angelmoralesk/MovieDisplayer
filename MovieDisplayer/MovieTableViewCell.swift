@@ -11,16 +11,10 @@ import UIKit
 class MovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieTitleLabel: UILabel!
-    
     @IBOutlet weak var generalInfoStack: UIStackView!
+
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-    
-    func makeButton() -> UIButton {
+    fileprivate func makeHourButton() -> UIButton {
         let hourButton = UIButton(type: .custom)
         hourButton.setTitle("10:00am", for: .normal)
         hourButton.titleLabel?.font = UIFont.systemFont(ofSize: 12.0)
@@ -35,9 +29,9 @@ class MovieTableViewCell: UITableViewCell {
         scheduleStack.axis = .horizontal
         scheduleStack.spacing = 30
         
-        let hourButton = makeButton()
-        let hourButton2 = makeButton()
-        let hourButton3 = makeButton()
+        let hourButton = makeHourButton()
+        let hourButton2 = makeHourButton()
+        let hourButton3 = makeHourButton()
 
         scheduleStack.addArrangedSubview(hourButton)
         scheduleStack.addArrangedSubview(hourButton2)
@@ -47,7 +41,6 @@ class MovieTableViewCell: UITableViewCell {
         scheduleStack.translatesAutoresizingMaskIntoConstraints = false
         scheduleStack.heightAnchor.constraint(equalToConstant: 20).isActive = true
 
-        
         return scheduleStack
     }
     
@@ -79,7 +72,6 @@ class MovieTableViewCell: UITableViewCell {
         generalInfoStack.addArrangedSubview(stack5)
         let stack6 = makeScheduleStack()
         generalInfoStack.addArrangedSubview(stack6)
-       // contentView.layoutIfNeeded()
 
     }
   
