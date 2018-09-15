@@ -45,9 +45,7 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     
-    func configure() {
-
-        
+    fileprivate func makeHeader() {
         let languageType = UIButton(type: .custom)
         languageType.setTitle("SUB", for: .normal)
         languageType.titleLabel?.font = UIFont.systemFont(ofSize: 12.0)
@@ -55,7 +53,9 @@ class MovieTableViewCell: UITableViewCell {
         languageType.backgroundColor = UIColor.red
         movieInfoStack.addArrangedSubview(languageType)
         languageType.translatesAutoresizingMaskIntoConstraints = false
-
+    }
+    
+    fileprivate func makeRooms() {
         let rowOne = makeTimeStack()
         movieInfoStack.addArrangedSubview(rowOne)
         let rowTwo = makeTimeStack()
@@ -68,8 +68,12 @@ class MovieTableViewCell: UITableViewCell {
         movieInfoStack.addArrangedSubview(rowFive)
         let rowSix = makeTimeStack()
         movieInfoStack.addArrangedSubview(rowSix)
-
     }
-  
+    
+    func configure() {
+        makeHeader()
+        makeRooms()
+    }
+
 
 }

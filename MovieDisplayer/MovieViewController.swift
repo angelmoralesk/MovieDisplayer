@@ -22,9 +22,11 @@ class MovieViewController: UIViewController {
         
     }()
     
+    let movies = MovieDTO.makeMovies()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
 
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,7 +53,6 @@ extension MovieViewController : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
         cell.configure()
-        cell.layoutIfNeeded()
         return cell
     }
     

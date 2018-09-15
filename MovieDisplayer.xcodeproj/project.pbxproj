@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F342FA214D7945007BDE07 /* MovieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F342F9214D7945007BDE07 /* MovieDTO.swift */; };
 		60F61CFA214CA18000DB4C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F61CF9214CA18000DB4C5B /* AppDelegate.swift */; };
 		60F61CFC214CA18000DB4C5B /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F61CFB214CA18000DB4C5B /* MovieViewController.swift */; };
 		60F61CFF214CA18000DB4C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F61CFD214CA18000DB4C5B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60F342F9214D7945007BDE07 /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
 		60F61CF6214CA18000DB4C5B /* MovieDisplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDisplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F61CF9214CA18000DB4C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60F61CFB214CA18000DB4C5B /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				60F61D05214CA18A00DB4C5B /* Info.plist */,
 				60F61D0B214CA22000DB4C5B /* MovieCell.xib */,
 				60F61D0D214CA7C200DB4C5B /* MovieTableViewCell.swift */,
+				60F342F9214D7945007BDE07 /* MovieDTO.swift */,
 			);
 			path = MovieDisplayer;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F342FA214D7945007BDE07 /* MovieDTO.swift in Sources */,
 				60F61CFC214CA18000DB4C5B /* MovieViewController.swift in Sources */,
 				60F61CFA214CA18000DB4C5B /* AppDelegate.swift in Sources */,
 				60F61D0E214CA7C200DB4C5B /* MovieTableViewCell.swift in Sources */,
