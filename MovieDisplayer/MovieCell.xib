@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -72,7 +71,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="generalInfoStack" destination="tgO-Kw-j2d" id="NnC-XO-YHy"/>
+                <outlet property="movieInfoStack" destination="tgO-Kw-j2d" id="NnC-XO-YHy"/>
                 <outlet property="movieTitleLabel" destination="Jac-6m-xz8" id="9YW-PH-TVJ"/>
             </connections>
             <point key="canvasLocation" x="-4.5" y="20"/>
